@@ -13,9 +13,9 @@ public class Main {
         System.out.println("Busted MAX Value " + (myMaxIntValue + 1));  // Overflow - number too large which made it -2 billion
         System.out.println("Busted MIN Value " + (myMinIntValue - 1)); // Overflow - number is too large which made it 2 billion
 
-        byte myMinByteValue = Byte.MIN_VALUE;
-        byte myMaxByteValue = Byte.MAX_VALUE;
-        System.out.println("Byte Minimum Value = " + myMinByteValue);
-        System.out.println("Byte Maximum Value = " + myMaxByteValue);
+        Short myMinShortValue = Short.MIN_VALUE;
+        Short myMaxShortValue = Short.MAX_VALUE;
+        System.out.println("Short Minimum Value = " + myMinShortValue);
+        System.out.println("Short Maximum Value = " + myMaxShortValue);
     }
 }
