@@ -53,15 +53,14 @@ public class Main {
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-        if (playerScore > 1000) {
+        if (playerScore > 999) {
             return 1;
-        } else if(playerScore > 499 && playerScore < 1000) {
+        } else if(playerScore > 499) {
             return 2;
-        } else if (playerScore > 99 && playerScore < 500) {
+        } else if (playerScore > 99) {
             return 3;
-        } else {
-            return 4;
         }
+            return 4;
     }
 
     // new method
