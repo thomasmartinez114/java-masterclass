@@ -3,7 +3,7 @@ package martinez.company;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        getDurationString(60, 59);
     }
 
     // Challenge
@@ -15,6 +15,18 @@ public class Main {
     // If valid, calculate how many hours minutes and seconds equal
     // the minutes and seconds passed to this method and return
     // that value as string in format "XXh YYm ZZs"
+
+    public static int getDurationString(int minutes, int seconds){
+        if ((minutes < 0) || (seconds < 0) || (seconds > 59)) {
+            System.out.println("Invalid Value");
+            return -1;
+        }
+
+        int hours = minutes / 60;
+        int remainMinutes = seconds / 60;
+        System.out.println("Hours " + hours + " and Minutes " + remainMinutes);
+        return hours;
+    }
 
     // Create 2nd method with same name with only one param seconds
     // Validate that it is >= 0 and return "Invalid value" if not true
