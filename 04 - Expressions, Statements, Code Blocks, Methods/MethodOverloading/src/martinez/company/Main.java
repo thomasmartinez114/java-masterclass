@@ -7,6 +7,9 @@ public class Main {
         System.out.println("New score is " + newScore);
         calculateScore(75);
         calculateScore();
+
+        calcFeetAndInchesToCentimeters(12, 10);
+        calcFeetAndInchesToCentimeters(2);
     }
 
     public static int calculateScore(String playerName, int score) {
@@ -24,4 +27,25 @@ public class Main {
         System.out.println("No player name, no player score");
         return 0;
     }
+
+    public static double calcFeetAndInchesToCentimeters(int feet, int inches) {
+        if (feet > 0) {
+            double cmFeet = feet / 0.032808;
+            System.out.println("Feet to CM = " + cmFeet);
+            return cmFeet;
+        } else {
+            return -1;
+        }
+    }
+
+    public static double calcFeetAndInchesToCentimeters(int feet) {
+        if (feet >= 0) {
+            double feetToInches = feet * 0.0833;
+            System.out.println(feetToInches);
+            return feetToInches;
+        } else {
+            return -1;
+        }
+    }
+
 }
