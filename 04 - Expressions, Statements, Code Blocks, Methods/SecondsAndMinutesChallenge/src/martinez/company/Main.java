@@ -23,8 +23,7 @@ public class Main {
         }
 
         int hours = minutes / 60;
-        int remainMinutes = seconds / 60;
-        System.out.println("Hours " + hours + " and Minutes " + remainMinutes);
+        System.out.println(hours + "h " + minutes + "m " + seconds + "s");
         return hours;
     }
 
@@ -34,6 +33,15 @@ public class Main {
     // call the other overloaded method passing the correct minutes and seconds
     // calculated so that it can calculate correctly
     // Call both methods to print values to console
+
+    public static int getDurationString(int seconds) {
+        if (seconds < 0) {
+            System.out.println("Invalid Value");
+        }
+
+        int minutes = 60 / seconds;
+        System.out.println("Minutes: " + minutes);
+    }
 
     // Tips
     // Use int or long for number data types
