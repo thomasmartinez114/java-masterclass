@@ -27,6 +27,7 @@ public class Main {
     // For the input 61 mins output should be 01h 01m 00s, but ok if it is
     // 1h 1m 0s (use if-else)
 
+    private static final String INVALID_VALUE_MESSAGE = "Invalid Value";
 
     public static void main(String[] args) {
         System.out.println(getDurationString(65L, 45L));
@@ -59,7 +60,7 @@ public class Main {
 
     private static String getDurationString(long minutes, long seconds) {
         if( (minutes < 0) || (seconds < 0) || (seconds > 59) ) {
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
 
         long hours = minutes / 60;
@@ -85,7 +86,7 @@ public class Main {
 
     private static String getDurationString(long seconds) {
         if (seconds < 0) {
-            return "Invalid Value";
+            return INVALID_VALUE_MESSAGE;
         }
 
         long minutes = seconds / 60;
