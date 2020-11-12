@@ -44,5 +44,26 @@ public class DayOfTheWeekChallenge {
                 break;
             }
         }
+
+        if (day == 0){
+            System.out.println("Day is Sunday");
+        } if (day == 1) {
+            System.out.println("Day is Mon");
+        }
+        if (day == 2) {
+            System.out.println("Day is Tues");
+        }
+        if (day == 3) {
+            System.out.println("Day is Wed");
+        }
+        if (day == 4) {
+            System.out.println("Day is Thurs");
+        }
+        if (day == 5) {
+            System.out.println("Day is Fri");
+        }
+        if (day == 6) {
+            System.out.println("Day is Sat");
+        }
     }
 }
