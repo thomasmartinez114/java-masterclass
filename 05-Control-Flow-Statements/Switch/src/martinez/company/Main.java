@@ -37,10 +37,10 @@ public class Main {
         // display a message if any of these are found and then break
         // Add a default which displays a message saying not found
 
-        String charValue = "F";
+        char charValue = 'F';
 
         switch(charValue) {
-            case "A": case "B": case "C": case "D": case "E":
+            case 'A': case 'B': case 'C': case 'D': case 'E':
                 System.out.println("The char was A, B, C, D or E: " + charValue);
                 break;
 
