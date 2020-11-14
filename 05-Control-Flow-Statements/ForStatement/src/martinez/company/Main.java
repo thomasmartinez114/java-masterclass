@@ -15,7 +15,7 @@ public class Main {
 
         for (int i = 2; i < 9; i++) {
             System.out.println("$10,000 at " + i + "% interest rate = $"
-                    + calculateInterest(10000.0, i));
+                    + String.format("%.2f",calculateInterest(10000.0, i)));
         }
 
     }
