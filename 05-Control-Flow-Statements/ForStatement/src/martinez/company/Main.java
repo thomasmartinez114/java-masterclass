@@ -47,9 +47,6 @@ public class Main {
                 }
             }
         }
-
-
-
     }
 
         public static boolean isPrime(int n) {
