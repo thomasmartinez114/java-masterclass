@@ -1,6 +1,6 @@
 package martinez.company;
 
-public class Main {
+public abstract class Main {
 
     public static void main(String[] args) {
         System.out.println("10,000 at 2% interest = " + calculateInterest(10000.0, 2.0));

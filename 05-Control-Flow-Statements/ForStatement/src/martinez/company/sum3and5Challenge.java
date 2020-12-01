@@ -13,5 +13,24 @@ public class sum3and5Challenge {
 //
 //            Note: Type all code in main method
 
+    public String sumChallenge() {
+        int count = 0;
+        int sum = 0;
+
+        for (int i = 1; i < 1001; i++) {
+            if ((i % 3 == 0) && (i % 5 == 0)) {
+                count++;
+                sum += i;
+                System.out.println("Found number = " + i);
+            }
+
+            if (count == 5) {
+                break;
+            }
+        }
+
+        System.out.println("The sum is : " + sum);
+    }
+
 
 }
