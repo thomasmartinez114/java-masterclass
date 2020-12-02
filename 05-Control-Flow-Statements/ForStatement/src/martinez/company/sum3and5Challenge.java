@@ -30,6 +30,7 @@ public class sum3and5Challenge {
         }
 
         System.out.println("The sum is : " + sum);
+        return toString();
     }
 
 
