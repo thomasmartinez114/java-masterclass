@@ -36,16 +36,29 @@ public class sumOdd {
 //    NOTE: Both methods  needs to be defined as public static like we have been doing so far in the course.
 //    NOTE: Do not add a  main method to solution code.
 
-    public static boolean isOdd(int number){
-        if (number < 0) {
+    public static boolean isOdd(int number) {
+        if(number > 0) {
+            if(number % 2 != 0) {
+                return true;
+            }
             return false;
-        } else {
-            return true;
         }
+        return false;
     }
 
-    public static void sumOdd(int start, int end) {
-        for ()
+    public static int sumOdd(int start, int end) {
+        int sum = 0;
+        if (start > 0 && end > 0 && start <= end) {
+            for (int i = start; i <= end; i++) {
+                if (isOdd(i) == true) {
+                    sum += i;
+                }
+            }
+            System.out.println(sum);
+            return sum;
+        }
+        System.out.println(-1);
+        return -1;
     }
 
 }
