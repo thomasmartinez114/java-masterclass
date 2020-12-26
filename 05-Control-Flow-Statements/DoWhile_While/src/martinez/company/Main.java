@@ -18,11 +18,22 @@ public class Main {
 //            count++;
 //        }
 
-        count = 1;
-        do {
-            System.out.println("Count value was " + count);
-            count++;
-        } while (count != 6);
+//        count = 1;
+//        do {
+//            System.out.println("Count value was " + count);
+//            count++;
+//        } while (count != 6);
+
+        int number = 4;
+        int finishedNumber = 20;
+
+        while (number <= finishedNumber) {
+            number++;
+            if (!isEvenNumber(number)) {
+                continue;
+            }
+            System.out.println("Even number " + number);
+        }
     }
 
     // Create a method called isEvenNumber that takes a parameter of type int
@@ -30,9 +41,12 @@ public class Main {
     // an even number or not.
     // return true if an even number, otherwise return false;
 
+//    answer
     public static boolean isEvenNumber(int number) {
-        do {
+        if ((number % 2) == 0) {
             return true;
-        } while (number % 2 == 0);
-    } return false;
+        } else {
+            return false;
+        }
+    }
 }
