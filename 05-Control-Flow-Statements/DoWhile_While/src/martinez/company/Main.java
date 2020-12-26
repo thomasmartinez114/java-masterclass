@@ -4,10 +4,10 @@ public class Main {
 
     public static void main(String[] args) {
         int count = 6;
-        while(count != 6) {
-            System.out.println("Count value is " + count);
-            count++;
-        }
+//        while(count != 6) {
+//            System.out.println("Count value is " + count);
+//            count++;
+//        }
 
 //        count = 1;
 //        while(true) {
@@ -17,5 +17,11 @@ public class Main {
 //            System.out.println("Count value is " + count);
 //            count++;
 //        }
+
+        count = 1;
+        do {
+            System.out.println("Count value was " + count);
+            count++;
+        } while (count != 6);
     }
 }
