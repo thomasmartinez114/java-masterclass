@@ -26,14 +26,28 @@ public class Main {
 
         int number = 4;
         int finishedNumber = 20;
+        int evenNumbers = 0;
 
         while (number <= finishedNumber) {
             number++;
-            if (!isEvenNumber(number)) {
+            if(!isEvenNumber(number)) {
                 continue;
             }
+
             System.out.println("Even number " + number);
+            evenNumbers++;
+            if(evenNumbers >=5) {
+                break;
+            }
         }
+        System.out.println("Total even numbers found = " + evenNumbers);
+
+        // Modify the while code above
+        // Make it also record the total number of even numbers it has found
+        // and break once 5 are found
+        // and at the end, display the total number of even numbers found
+
+
     }
 
     // Create a method called isEvenNumber that takes a parameter of type int
