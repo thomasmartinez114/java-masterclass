@@ -13,7 +13,11 @@ public class Main {
         String name = scanner.nextLine();
         int age = 2020 - yearOfBirth;
 
-        System.out.println("Your name is " + name + " and age is " + age);
+        if(age >= 0 && age <= 100) {
+            System.out.println("Your name is " + name + " and age is " + age);
+        } else {
+            System.out.println("Invalid year of birth");
+        }
 
         scanner.close();
     }
