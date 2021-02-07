@@ -8,6 +8,7 @@ public class Main {
 
         int min = 0;
         int max = 0;
+        boolean first = true;
 
         while(true) {
             System.out.println("Enter number: ");
@@ -16,6 +17,14 @@ public class Main {
             if(isAnInt) {
 
                 int number = scanner.nextInt();
+
+                // check if first is set to true
+                // then when numbers are submitted set first to false
+                if(first) {
+                    first = false;
+                    min = number;
+                    max = number;
+                }
 
                 // test if number is > max
                 if(number > max) {
