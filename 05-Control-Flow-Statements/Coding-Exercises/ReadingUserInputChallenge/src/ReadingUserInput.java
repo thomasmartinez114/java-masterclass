@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class ReadingUserInput {
 
     public static void sumNumbers() {
+
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter number #1: ");
 
     }
 }
